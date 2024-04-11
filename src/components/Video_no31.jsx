@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Funuser from './Video_n031_1'
+import Funuser from './Video_no31_1'
 function Fun() {
     const [data, setData] = useState(10);
     const [count, setCount] = useState(50);

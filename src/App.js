@@ -16,12 +16,13 @@ import Video_no24 from './components/Video_no24';
 import Video_no25 from './components/Video_no25';
 import Video_no29 from './components/Video_no29';
 import Video_no30 from './components/Video_no30';
+import Video_no31 from './components/Video_no31';
 
 
 function App() {
   const [name , setName] = useState("anil")
-  const [brand , setbrand] = useState("fortuner");
-  const [model, setmodel] = useState('2016');
+  // const [brand , setbrand] = useState("fortuner");
+  // const [model, setmodel] = useState('2016');
 
   function getdata(){
     alert("Hello from app component");
@@ -44,11 +45,12 @@ function App() {
           
     <Route path='/v29' element={<Video_no29/> } />
     <Route path='/v30' element={<Video_no30/> } />
+    <Route path='/v31' element={<Video_no31/> } />
     
   </Routes>
   </BrowserRouter>
-  <Video_no14  brand ={brand} model={model} />
-  <button onClick={()=>{setbrand("Mustang"); setmodel("2023");}}>update car brand</button>
+  {/* <Video_no14  brand ={brand} model={model} />
+  <button onClick={()=>{setbrand("Mustang"); setmodel("2023");}}>update car brand</button> */}
    {/* <h1>Hello World !</h1> */}
       <h1>{name}</h1>
       <h1>Render Method in React</h1>

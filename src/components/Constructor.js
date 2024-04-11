@@ -23,12 +23,13 @@
 // console.log(c1.pomefruits());
 
 
-
+shivam()
 function shivam() {
-        console.log("hello form shivam");
+    // console.log("hello form shivam");
+    return("shivam")
     }
     
-shivam()
+// shivam()
     
 // console.log(a)
 // var a = 10;

@@ -1,6 +1,6 @@
 import './App.css';
  import React, {useState} from 'react'
- import   {BrowserRouter, Routes, Route} from 'react-router-dom'
+ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import  Rendring from '../src/components/contRendering'
 import Video_n011 from './components/Video_n011';
 import Video_no13 from '../src/components/Video_no13'
@@ -14,13 +14,15 @@ import Video_no21_1 from './components/Video_no21_1';
 import Video_no23 from './components/Video_no23';
 import Video_no24 from './components/Video_no24';
 import Video_no25 from './components/Video_no25';
+import Video_no26 from './components/Video_no26';
 import Video_no29 from './components/Video_no29';
 import Video_no30 from './components/Video_no30';
 import Video_no31 from './components/Video_no31';
+import Video_no41 from './components/Video_no41';
 
 
 function App() {
-  const [name , setName] = useState("anil")
+  // const [name , setName] = useState("anil") //---
   // const [brand , setbrand] = useState("fortuner");
   // const [model, setmodel] = useState('2016');
 
@@ -42,20 +44,24 @@ function App() {
     <Route path='/v21_' element={<Video_no21_1 data={getdata} />} />
     <Route path='/v23' element={<Video_no23 />} />
     <Route path='/v25' element={<Video_no25 />} />
-          
+    <Route path='/v26' element={<Video_no26 />} />    
     <Route path='/v29' element={<Video_no29/> } />
     <Route path='/v30' element={<Video_no30/> } />
     <Route path='/v31' element={<Video_no31/> } />
+    <Route path='/v41' element={<Video_no41/> } />
     
   </Routes>
   </BrowserRouter>
   {/* <Video_no14  brand ={brand} model={model} />
   <button onClick={()=>{setbrand("Mustang"); setmodel("2023");}}>update car brand</button> */}
-   {/* <h1>Hello World !</h1> */}
-      <h1>{name}</h1>
-      <h1>Render Method in React</h1>
-      <Video_no24 />
-      <button onClick={()=>setName("Sidhu")}>Update Name</button>
+      {/* <h1>Hello World !</h1> */}
+      
+
+      {/* <h1>{name}</h1> */}
+      {/* <h1>Render Method in React</h1> */}
+      {/* <Video_no24 /> */}
+      {/* <button onClick={() => setName("Sidhu")}>Update Name</button> */}
+      
 </div>
   );
 }
